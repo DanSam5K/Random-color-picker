@@ -2,6 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class Random extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {color: [25, 125, 225]};
+    }
+
   componentDidMount() {
     this.applyColor();
   }
